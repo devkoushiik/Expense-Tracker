@@ -32,6 +32,9 @@ const App = () => {
   };
   return (
     <div>
+      <h1 className="text-center text-white font-bold text-4xl my-10">
+        Expense Tracker
+      </h1>
       <NewExpense onSaveExpense={addExpenseHandler} />
       <Expenses onDelete={onDeleteHanlder} items={expenses} />
     </div>
