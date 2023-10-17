@@ -11,7 +11,7 @@ const Expenses = ({ items, onDelete }) => {
     setFilterYear(selectedYear);
   };
 
-  const filteredExpenses = items.filter((item) => {
+  const filteredExpenses = items?.filter((item) => {
     return new Date(item.date).getFullYear().toString() === filteredYear;
   });
 

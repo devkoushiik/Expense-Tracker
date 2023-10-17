@@ -27,7 +27,7 @@ const App = () => {
 
   // delete
   const onDeleteHanlder = (id) => {
-    const newArr = expenses.filter((item) => item.id != id);
+    const newArr = expenses?.filter((item) => item.id != id);
     setExpenses(newArr);
   };
   return (
