@@ -23,7 +23,7 @@ const Expenses = ({ items, onDelete }) => {
           selected={filteredYear}
           onExpenseFilter={filterChangeHandler}
         />
-        {items.length < 1 && (
+        {items?.length < 1 && (
           <p className="text-center text-white my-3 font-bold">
             Please Added Some Items
           </p>
