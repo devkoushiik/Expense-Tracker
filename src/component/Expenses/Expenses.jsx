@@ -28,7 +28,7 @@ const Expenses = ({ items, onDelete }) => {
             Please Added Some Items
           </p>
         )}
-        {filteredExpenses.length === 0 ? (
+        {filteredExpenses?.length === 0 ? (
           <p className="font-bold text-center text-white py-5">
             No expenses found.
           </p>
